@@ -456,7 +456,7 @@
         .hero-img-section-bg {
             width: 100%;
             height: 100%;
-            background-image: url('ChatGPT Image Jul 9, 2026, 04_02_03 PM.png');
+            background-image: url('about-image.png');
             background-size: cover;
             background-position: center;
             position: absolute;
@@ -1851,8 +1851,6 @@
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#roadmap">Global Tour</a></li>
-                <li><a href="#why-attend">Conference</a></li>
-                <li><a href="#developers">Developers</a></li>
             </ul>
             
             <a href="#register" class="nav-cta">Get Your Free Invite</a>
@@ -1872,8 +1870,6 @@
             <li><a href="#hero" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#roadmap" class="nav-link">Global Tour</a></li>
-            <li><a href="#why-attend" class="nav-link">Conference</a></li>
-            <li><a href="#developers" class="nav-link">Developers</a></li>
             <li><a href="#register" class="nav-link">Get Your Free Invite</a></li>
         </ul>
     </div>
@@ -1883,10 +1879,9 @@
        HERO BANNER & PATHWAY
        ====================================================== -->
     <section id="hero">
-        <!-- Hero Parallax Image banner -->
-        <div class="hero-img-section">
-            <div class="hero-img-section-bg" id="hero-parallax-bg"></div>
-            <div class="hero-img-overlay"></div>
+        <!-- Hero Image Banner (Uncropped) -->
+        <div class="hero-img-section" style="min-height: auto; width: 100%; display: flex; justify-content: center; background: #fff;">
+            <img src="about-image.png" alt="Event Poster" id="hero-parallax-bg" style="width: 100%; height: auto; display: block;">
         </div>
 
         <div class="hero-text">
@@ -1931,110 +1926,267 @@
             <!-- Main Headline Content -->
             <div class="hero-headline-block">
                 <div class="container">
-                    <span class="hero-eyebrow">Niksglobal Capital Presents</span>
                     
-                    <h1 class="hero-h1">
-                        <span class="sub-line">Singapore International</span>
-                        Indian Property Investment <br>
-                        <span class="italic">Exhibition</span> <span class="accent">2026</span>
-                    </h1>
+                    <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+                        <div class="hero-text-content" style="flex: 1 1 500px;">
+                            <h1 class="hero-h1" style="font-size: clamp(36px, 5vw, 68px); line-height: 1.15;">
+                                Your Gateway to India's Top <br>
+                                <span class="accent">Real Estate Destinations</span>
+                            </h1>
+                            <p style="font-size: clamp(16px, 2vw, 24px); font-weight: 600; color: var(--text-secondary); margin-top: 1.5rem;">
+                                Delhi NCR &bull; Tamil Nadu &bull; Telangana
+                            </p>
+                        </div>
 
-                    <div class="hero-bottom-row">
-                        <p class="hero-sub">
-                            Connecting India's leading tier-1 developers with global institutional capital, high-net-worth investors, family offices, and elite NRI networks on <strong>2 August 2026</strong> in Singapore.
-                        </p>
-                        
-                        <div class="hero-actions">
-                            <a href="#register" class="btn-primary">Reserve Your Seat <i class="fa-solid fa-arrow-right arr"></i></a>
+                        <div class="hero-image-content reveal pop-up-anim-img" style="flex: 1 1 400px; display: flex; justify-content: flex-end; align-items: center;">
+                            <img src="hero-image.png" alt="Company Showcase Target Cities" style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 50px rgba(194, 24, 50, 0.15);">
                         </div>
                     </div>
+
+                    <style>
+                        .pop-up-anim {
+                            opacity: 0 !important;
+                            transform: scale(0.8) translateY(30px) !important;
+                            transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+                        }
+                        .pop-up-anim.revealed {
+                            opacity: 1 !important;
+                            transform: scale(1) translateY(0) !important;
+                        }
+                        .pop-up-anim-img {
+                            opacity: 0 !important;
+                            transform: scale(0.9) translateX(50px) !important;
+                            transition: opacity 1s ease-out 0.2s, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s !important;
+                        }
+                        .pop-up-anim-img.revealed {
+                            opacity: 1 !important;
+                            transform: scale(1) translateX(0) !important;
+                        }
+                    </style>
+
+
                 </div>
             </div>
 
             <!-- Stats Bar -->
             <div class="hero-stats-container">
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <span class="stat-number">500<sup>+</sup></span>
-                        <span class="stat-label">NRI Investors</span>
+                <div class="hero-stats" style="grid-template-columns: repeat(3, 1fr);">
+                    <div class="hero-stat" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.5rem 1rem; text-align: center;">
+                        <span style="font-size: 2.4rem; font-weight: 900; color: var(--text-primary); font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 1.5px;">DELHI NCR</span>
+                        <span style="font-size: 1.35rem; font-weight: 600; color: var(--text-secondary); margin-top: 0.5rem;">(Gurgaon, Noida, and Ghaziabad)</span>
                     </div>
-                    <div class="hero-stat">
-                        <span class="stat-number">10<sup>+</sup></span>
-                        <span class="stat-label">Premier Developers</span>
+                    <div class="hero-stat" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.5rem 1rem; text-align: center;">
+                        <span style="font-size: 2.4rem; font-weight: 900; color: var(--text-primary); font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 1.5px;">TELANGANA</span>
+                        <span style="font-size: 1.35rem; font-weight: 600; color: var(--text-secondary); margin-top: 0.5rem;">(Hyderabad and Vizag)</span>
                     </div>
-                    <div class="hero-stat">
-                        <span class="stat-number">2<sup>nd</sup></span>
-                        <span class="stat-label">Global Tour Stop</span>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="stat-number">0<sup>%</sup></span>
-                        <span class="stat-label">Brokerage Fees</span>
+                    <div class="hero-stat" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.5rem 1rem; text-align: center;">
+                        <span style="font-size: 2.4rem; font-weight: 900; color: var(--text-primary); font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 1.5px;">TAMIL NADU</span>
+                        <span style="font-size: 1.35rem; font-weight: 600; color: var(--text-secondary); margin-top: 0.5rem;">(Chennai, Coimbatore, Tenkasi, Courtalam)</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <!-- ======================================================
-       MARQUEE STRIP
-       ====================================================== -->
-    <div class="marquee-strip">
-        <div class="marquee-inner">
-            <span class="marquee-item">Singapore Property &amp; Investment Summit 2026</span>
-            <span class="marquee-sep">★</span>
-            <span class="marquee-item">Organized by Niksglobal Capital</span>
-            <span class="marquee-sep">★</span>
-            <span class="marquee-item">Connecting HNIs, NRIs &amp; Capital Avenues</span>
-            <span class="marquee-sep">★</span>
-            <span class="marquee-item">August 2, 2026</span>
-            <span class="marquee-sep">★</span>
-            <span class="marquee-item">Luxury Real Estate Launches</span>
-            <span class="marquee-sep">★</span>
             
-            <!-- Repeat items to enable smooth marquee loop -->
-            <span class="marquee-item">Singapore Property &amp; Investment Summit 2026</span>
-            <span class="marquee-sep">★</span>
-            <span class="marquee-item">Organized by Niksglobal Capital</span>
-            <span class="marquee-sep">★</span>
-            <span class="marquee-item">Connecting HNIs, NRIs &amp; Capital Avenues</span>
-            <span class="marquee-sep">★</span>
-            <span class="marquee-item">August 2, 2026</span>
-            <span class="marquee-sep">★</span>
-            <span class="marquee-item">Luxury Real Estate Launches</span>
-            <span class="marquee-sep">★</span>
-        </div>
-    </div>
-
-
-    <!-- ======================================================
-       ABOUT NIKSGLOBAL CAPITAL
-       ====================================================== -->
-    <section id="about" class="about reveal">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-info-block">
-                    <span class="section-tag">Elite Confluence</span>
-                    <h2 class="about-heading">Redefining Luxury <em>Real Estate</em> Capital Networks.</h2>
-                    <p class="about-body">Niksglobal Capital is a global property syndication firm and luxury real estate networking manager. We operate as the strategic bridge between the premier real estate developers launching landmark projects in India and global wealth aggregators looking for yield-bearing property assets.</p>
+            <!-- ======================================================
+               MARQUEE STRIP
+               ====================================================== -->
+            <div class="marquee-strip" style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-top: 2rem;">
+                <div class="marquee-inner">
+                    <span class="marquee-item">Singapore Property &amp; Investment Summit 2026</span>
+                    <span class="marquee-sep">★</span>
+                    <span class="marquee-item">Organized by Niksglobal Capital</span>
+                    <span class="marquee-sep">★</span>
+                    <span class="marquee-item">Connecting HNIs, NRIs &amp; Capital Avenues</span>
+                    <span class="marquee-sep">★</span>
+                    <span class="marquee-item">August 2, 2026</span>
+                    <span class="marquee-sep">★</span>
+                    <span class="marquee-item">Luxury Real Estate Launches</span>
+                    <span class="marquee-sep">★</span>
                     
-                    <p class="about-body">Our exclusive summits enable high-yield discussions, joint venture structuring, and direct investment matchings for real estate developers looking to extend distribution channels to affluent global segments.</p>
-                    
-                    <div class="about-pull">
-                        "Bridging cross-border real estate networks to match premier developers with verified global investment portfolios."
-                    </div>
+                    <!-- Repeat items to enable smooth marquee loop -->
+                    <span class="marquee-item">Singapore Property &amp; Investment Summit 2026</span>
+                    <span class="marquee-sep">★</span>
+                    <span class="marquee-item">Organized by Niksglobal Capital</span>
+                    <span class="marquee-sep">★</span>
+                    <span class="marquee-item">Connecting HNIs, NRIs &amp; Capital Avenues</span>
+                    <span class="marquee-sep">★</span>
+                    <span class="marquee-item">August 2, 2026</span>
+                    <span class="marquee-sep">★</span>
+                    <span class="marquee-item">Luxury Real Estate Launches</span>
+                    <span class="marquee-sep">★</span>
                 </div>
+            </div>
 
-                <div class="about-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=700&q=80" alt="Luxury Meeting Space" class="about-img">
-                    <div class="about-img-badge">
-                        <span class="badge-num">55<sup>+</sup></span>
-                        <span class="badge-lbl">Global Events Hosted</span>
+            <!-- Why Invest Section -->
+            <div class="why-invest-section" style="margin-top: 6rem; padding-bottom: 4rem;">
+                <div class="section-header" style="text-align: center; margin-bottom: 6rem;">
+                    <h2 class="section-title">Why <em>Delhi NCR, Hyderabad, and Chennai?</em></h2>
+                    <div class="divider" style="width: 80px; height: 2px; background: var(--accent-red); margin: 1.5rem auto 0;"></div>
+                </div>
+                
+                <style>
+                    .premium-feature-row {
+                        display: flex;
+                        align-items: center;
+                        gap: 5rem;
+                        margin-bottom: 7rem;
+                        overflow: hidden;
+                    }
+                    .premium-feature-row:nth-child(even) {
+                        flex-direction: row-reverse;
+                    }
+                    .premium-feature-img-wrapper {
+                        flex: 1.2;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+                        position: relative;
+                        aspect-ratio: 4/3;
+                    }
+                    .premium-feature-img-wrapper img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+                    }
+                    .premium-feature-row:hover .premium-feature-img-wrapper img {
+                        transform: scale(1.08);
+                    }
+                    .premium-feature-content {
+                        flex: 1;
+                        padding: 2rem;
+                    }
+                    .premium-feature-title {
+                        font-family: var(--font-heading);
+                        font-size: 3.2rem;
+                        color: var(--text-primary);
+                        margin-bottom: 1.5rem;
+                        font-weight: 800;
+                        line-height: 1.1;
+                    }
+                    .premium-feature-title span {
+                        color: var(--accent-red);
+                    }
+                    .premium-bullets {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .premium-bullets li {
+                        font-family: var(--font-body);
+                        font-size: 1.1rem;
+                        line-height: 1.7;
+                        color: var(--text-secondary);
+                        margin-bottom: 1.2rem;
+                        position: relative;
+                        padding-left: 1.8rem;
+                    }
+                    .premium-bullets li::before {
+                        content: "•";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        color: var(--accent-red);
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        line-height: 1.2;
+                    }
+                    .premium-bullets li strong {
+                        color: var(--text-primary);
+                        font-weight: 700;
+                    }
+                    /* Animations */
+                    .slide-left {
+                        opacity: 0;
+                        transform: translateX(-80px);
+                        transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+                    }
+                    .slide-right {
+                        opacity: 0;
+                        transform: translateX(80px);
+                        transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+                    }
+                    .slide-left.revealed, .slide-right.revealed {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+
+                    @media(max-width: 1024px) {
+                        .premium-feature-row { gap: 3rem; }
+                        .premium-feature-title { font-size: 2.5rem; }
+                    }
+                    @media(max-width: 900px) {
+                        .premium-feature-row, .premium-feature-row:nth-child(even) {
+                            flex-direction: column;
+                            gap: 2rem;
+                            margin-bottom: 5rem;
+                        }
+                        .premium-feature-content {
+                            padding: 0 1rem;
+                            text-align: left;
+                        }
+                        .premium-feature-title { font-size: 2.2rem; text-align: center; }
+                    }
+                </style>
+
+                <div class="premium-features-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+                    
+                    <!-- Delhi -->
+                    <div class="premium-feature-row">
+                        <div class="premium-feature-img-wrapper reveal slide-left">
+                            <img src="delhi.png" alt="Delhi NCR Skyline">
+                        </div>
+                        <div class="premium-feature-content reveal slide-right">
+                            <h3 class="premium-feature-title">Delhi <span>NCR</span></h3>
+                            <ul class="premium-bullets">
+                                <li><strong>Unmatched Real Estate Magnet:</strong> Bolstered by massive infrastructural upgrades like the new Jewar Airport.</li>
+                                <li><strong>Expanding Connectivity:</strong> Rapidly growing metro networks ensure seamless transit across the entire region.</li>
+                                <li><strong>High ROI Potential:</strong> Offers world-class commercial avenues, making it a top choice for discerning NRI investors.</li>
+                            </ul>
+                        </div>
                     </div>
+
+                    <!-- Hyderabad -->
+                    <div class="premium-feature-row">
+                        <div class="premium-feature-img-wrapper reveal slide-right">
+                            <img src="hyderabad.png" alt="Hyderabad Skyline">
+                        </div>
+                        <div class="premium-feature-content reveal slide-left">
+                            <h3 class="premium-feature-title">Hyderabad</h3>
+                            <ul class="premium-bullets">
+                                <li><strong>Booming IT Corridors:</strong> Driven by immense tech growth in major hubs like Gachibowli and HITEC City.</li>
+                                <li><strong>Dynamic Luxury Market:</strong> Supported by proactive government policies and stellar lifestyle amenities.</li>
+                                <li><strong>Exceptional Yields:</strong> Offers lower entry costs compared to Mumbai, guaranteeing phenomenal long-term growth.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Chennai -->
+                    <div class="premium-feature-row">
+                        <div class="premium-feature-img-wrapper reveal slide-left">
+                            <img src="chennai.png" alt="Chennai Skyline">
+                        </div>
+                        <div class="premium-feature-content reveal slide-right">
+                            <h3 class="premium-feature-title">Chennai</h3>
+                            <ul class="premium-bullets">
+                                <li><strong>Rich Cultural & Industrial Hub:</strong> Balances cultural heritage with immense manufacturing growth.</li>
+                                <li><strong>Stable Property Markets:</strong> Boasts excellent connectivity and emerging premium coastal developments.</li>
+                                <li><strong>Highly Secure Portfolio:</strong> Offers investors a highly secure, diversified, and highly profitable real estate addition.</li>
+                            </ul>
+                        </div>
+
+
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
 
 
     <!-- ======================================================
@@ -2044,7 +2196,7 @@
         <div class="container">
             <div class="section-header" style="text-align: center;">
                 <span class="section-tag" style="justify-content: center;">Conclave Tour Pathway</span>
-                <h2>Our Global Conclave Tour</h2>
+                <h2 style="text-transform: capitalize;">Our exhibition calender till now</h2>
                 <div class="divider" style="width: 80px; height: 2px; background: var(--accent-red); margin: 1.5rem auto 0;"></div>
             </div>
 
@@ -2098,40 +2250,24 @@
                             <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" class="stop-flag">
                         </div>
                         <span class="stop-country" style="color: var(--accent-red-dark);">Singapore</span>
-                        <span class="stop-date" style="color: var(--text-primary);">2 Aug 2026</span>
+                        <span class="stop-date" style="color: var(--text-primary);">23 Aug 2026</span>
                         <span class="stop-tag tag-live">Active</span>
                     </div>
 
-                    <!-- Japan -->
+                    <!-- Malaysia -->
                     <div class="roadmap-stop">
                         <div class="stop-node stop-upcoming">
                             <span>05</span>
-                            <img src="https://flagcdn.com/w40/jp.png" alt="Japan Flag" class="stop-flag">
+                            <img src="https://flagcdn.com/w40/my.png" alt="Malaysia Flag" class="stop-flag">
                         </div>
-                        <span class="stop-country">Japan</span>
-                        <span class="stop-date">Oct 2026</span>
+                        <span class="stop-country">Malaysia</span>
+                        <span class="stop-date">29th August</span>
                         <span class="stop-tag tag-upcoming-style">Upcoming</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Highlights Spotlight Box -->
-            <div class="roadmap-feature-box">
-                <div class="roadmap-feature-details">
-                    <span class="stop-date" style="margin-bottom: 0.5rem; display: inline-block;">Current Conclave Highlight</span>
-                    <h3 class="roadmap-feature-title">Singapore International Summit</h3>
-                    <p class="roadmap-feature-sub">Connecting elite NRI property buyers, asset management executives, and private family networks with tier-1 Indian property developers in Singapore.</p>
-                    
-                    <div class="roadmap-feature-chips">
-                        <div class="city-chip"><span class="city-dot"></span> 2 August 2026</div>
-                        <div class="city-chip"><span class="city-dot"></span> Financial Hub Singapore</div>
-                        <div class="city-chip"><span class="city-dot"></span> One-on-One Lounge Sessions</div>
-                        <div class="city-chip"><span class="city-dot"></span> High ROI Assets</div>
-                    </div>
-                </div>
 
-                <a href="#register" class="btn-primary">Request Invite</a>
-            </div>
         </div>
     </section>
 
@@ -2143,172 +2279,507 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Strategic Avenues</span>
-                <h2>Why Attend the <em>2026 Conclave</em>?</h2>
+                <style>
+                    @keyframes textShimmer {
+                        0% { background-position: 0% 50%; }
+                        50% { background-position: 100% 50%; }
+                        100% { background-position: 0% 50%; }
+                    }
+                    @keyframes floatTitle {
+                        0% { transform: translateY(0px); }
+                        50% { transform: translateY(-5px); }
+                        100% { transform: translateY(0px); }
+                    }
+                    .animated-title {
+                        animation: floatTitle 4s ease-in-out infinite;
+                    }
+                    .animated-title em {
+                        background: linear-gradient(90deg, var(--accent-red), #ff4d4d, var(--accent-red-dark), var(--accent-red));
+                        background-size: 300% 300%;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        animation: textShimmer 4s ease infinite;
+                        display: inline-block;
+                        font-family: var(--font-body);
+                        font-weight: 900;
+                        font-style: normal;
+                        padding-right: 0.15em;
+                        padding-bottom: 0.1em;
+                    }
+                </style>
+                <h2 class="animated-title" style="text-transform: capitalize;">Why to attend the <em>Indian Property Show</em></h2>
                 <div class="divider" style="width: 60px; height: 2px; background: var(--accent-red); margin-top: 1.5rem;"></div>
+                <h3 style="text-align: center; margin-top: 2rem; font-size: 2.5rem; color: var(--text-primary); font-family: var(--font-heading);">Our Projects</h3>
             </div>
 
-            <div class="why-grid">
-                <!-- Card 1 -->
-                <div class="why-card">
-                    <div class="why-card-top-line"></div>
-                    <span class="why-card-num">01</span>
-                    <span class="why-card-icon"><i class="fa-solid fa-users"></i></span>
-                    <h3 class="why-card-title">Meet Leading Developers</h3>
-                    <p class="why-card-body">Access direct discussions with executive leadership and visionary planners from top-tier real estate groups across major Indian metropolitan sectors.</p>
-                    <div class="why-card-stat">
-                        20<sup>+</sup> <small>Premium Builders On-Site</small>
-                    </div>
-                </div>
+            <style>
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin-top: 4rem;
+    }
+    .project-card {
+        border-radius: 24px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        aspect-ratio: 4/5;
+        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    .project-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .project-card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 25px 50px rgba(194, 24, 50, 0.25);
+    }
+    .project-card:hover img {
+        transform: scale(1.12);
+    }
+    .project-card-overlay {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.6) 50%, transparent 100%);
+        padding: 50px 25px 25px;
+        color: white;
+    }
+    .project-card-title {
+        font-family: var(--font-heading);
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+        font-weight: 700;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+    .project-card-location {
+        font-family: var(--font-body);
+        font-size: 0.95rem;
+        color: #e2e8f0;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .project-card-location i {
+        color: var(--accent-red);
+    }
+    .project-card::after {
+        content: '\f061';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        color: white;
+        background: var(--accent-red);
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: 0 5px 15px rgba(194, 24, 50, 0.4);
+        font-size: 1.2rem;
+    }
+    .project-card:hover::after {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    @media(max-width: 1024px) {
+        .projects-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    }
+    @media(max-width: 600px) {
+        .projects-grid { grid-template-columns: 1fr; }
+    }
+    
+    /* Project Modal Styles */
+    .project-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(15, 23, 42, 0.85);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        backdrop-filter: blur(5px);
+    }
+    .project-modal-content {
+        background: white;
+        padding: 3rem;
+        border-radius: 24px;
+        max-width: 500px;
+        width: 100%;
+        max-height: 85vh;
+        overflow-y: auto;
+        position: relative;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.25), 0 0 0 1px rgba(0,0,0,0.05);
+        animation: modalScaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes modalScaleIn {
+        from { transform: scale(0.95) translateY(20px); opacity: 0; }
+        to { transform: scale(1) translateY(0); opacity: 1; }
+    }
+    .project-modal-close {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 28px;
+        color: var(--text-secondary);
+        cursor: pointer;
+        transition: transform 0.3s, color 0.3s;
+    }
+    .project-modal-close:hover {
+        color: var(--accent-red);
+        transform: rotate(90deg);
+    }
+    .project-modal-title {
+        color: var(--text-primary);
+        font-family: var(--font-heading);
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+    .project-modal-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .project-detail-item {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0.8rem;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        font-family: var(--font-body);
+    }
+    .project-detail-label {
+        font-weight: 600;
+        color: var(--text-secondary);
+    }
+    .project-detail-value {
+        font-weight: 700;
+        color: var(--text-primary);
+        text-align: right;
+    }
+    .project-modal-extra {
+        background: #f8fafc;
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        color: var(--accent-red);
+        font-weight: 600;
+        text-align: center;
+        margin-top: 1rem;
+    }
+</style>
 
-                <!-- Card 2 -->
-                <div class="why-card">
-                    <div class="why-card-top-line"></div>
-                    <span class="why-card-num">02</span>
-                    <span class="why-card-icon"><i class="fa-solid fa-gem"></i></span>
-                    <h3 class="why-card-title">Exclusive Investment Portfolios</h3>
-                    <p class="why-card-body">Obtain allocations in pre-launch inventories, high-yield commercial sectors, and private luxury residential assets.</p>
-                    <div class="why-card-stat">
-                        8.5% <small>Average Expected Rental yield</small>
-                    </div>
-                </div>
+<div class="projects-grid">
+    <div class="project-card" onclick="openProjectModal('Lumina', 'Miyapur', '3BHK', '1550 - 2550 Sqft', '1.31cr ++', 'Dec 2028', 'G+13 Storey', 'Each floor 16 units with one single tower')">
+        <img src="1.jpeg" alt="Lumina">
+        <div class="project-card-overlay">
+            <h4 class="project-card-title">Lumina</h4>
+            <div class="project-card-location"><i class="fa-solid fa-location-dot"></i> Miyapur</div>
+        </div>
+    </div>
+    
+    <div class="project-card" onclick="openProjectModal('Botanika', 'Gachibowli', '3BHK', '2252 - 2660 Sqft', '3.5cr ++', 'Ready to move', '', '')">
+        <img src="2.jpeg" alt="Botanika">
+        <div class="project-card-overlay">
+            <h4 class="project-card-title">Botanika</h4>
+            <div class="project-card-location"><i class="fa-solid fa-location-dot"></i> Gachibowli</div>
+        </div>
+    </div>
+    
+    <div class="project-card" onclick="openProjectModal('Parkview', 'Gachibowli', '3BHK', '1725 2168 Sqft', '2cr ++', 'March 2027', 'G+ 21 storey', '')">
+        <img src="3.jpeg" alt="Parkview">
+        <div class="project-card-overlay">
+            <h4 class="project-card-title">Parkview</h4>
+            <div class="project-card-location"><i class="fa-solid fa-location-dot"></i> Gachibowli</div>
+        </div>
+    </div>
+    
+    <div class="project-card" onclick="openProjectModal('Beaumomde', 'Kokapet', '3BHK', '1860 - 2350 Sqft', '2.20cr ++', 'March 2028', 'G+14 Storey', 'EACH FLOOR 10 UNITS WITH SIX LIFTS')">
+        <img src="4.jpeg" alt="Beaumomde">
+        <div class="project-card-overlay">
+            <h4 class="project-card-title">Beaumomde</h4>
+            <div class="project-card-location"><i class="fa-solid fa-location-dot"></i> Kokapet</div>
+        </div>
+    </div>
+</div>
 
-                <!-- Card 3 -->
-                <div class="why-card">
-                    <div class="why-card-top-line"></div>
-                    <span class="why-card-num">03</span>
-                    <span class="why-card-icon"><i class="fa-solid fa-network-wired"></i></span>
-                    <h3 class="why-card-title">International Business Networking</h3>
-                    <p class="why-card-body">Build networks with cross-border wealth managers, multi-family office advisors, legal partners, and capital brokers.</p>
-                    <div class="why-card-stat">
-                        300<sup>+</sup> <small>Active Investors Attending</small>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="why-card">
-                    <div class="why-card-top-line"></div>
-                    <span class="why-card-num">04</span>
-                    <span class="why-card-icon"><i class="fa-solid fa-handshake"></i></span>
-                    <h3 class="why-card-title">Bespoke 1-to-1 Meetings</h3>
-                    <p class="why-card-body">Schedule closed-door consultations with investment consultants to structure bespoke acquisition portfolios under absolute privacy.</p>
-                    <div class="why-card-stat">
-                        150<sup>+</sup> <small>Private Meetings Planned</small>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="why-card">
-                    <div class="why-card-top-line"></div>
-                    <span class="why-card-num">05</span>
-                    <span class="why-card-icon"><i class="fa-solid fa-bullseye"></i></span>
-                    <h3 class="why-card-title">Premium Project Launches</h3>
-                    <p class="why-card-body">Be the first to explore architectural designs, blueprints, and scaling potential of major properties coming to market.</p>
-                    <div class="why-card-stat">
-                        ₹500Cr <small>Exclusive Inventory Value</small>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="why-card">
-                    <div class="why-card-top-line"></div>
-                    <span class="why-card-num">06</span>
-                    <span class="why-card-icon"><i class="fa-solid fa-chart-line"></i></span>
-                    <h3 class="why-card-title">Portfolio Diversification Avenues</h3>
-                    <p class="why-card-body">Examine structured real estate portfolios designed to mitigate market corrections, inflation surges, and currency fluctuations.</p>
-                    <div class="why-card-stat">
-                        4X <small>Security via Premium Hard Assets</small>
-                    </div>
-                </div>
+<div id="projectModal" class="project-modal-overlay" onclick="if(event.target === this) document.getElementById('projectModal').style.display='none'">
+    <div class="project-modal-content">
+        <span class="project-modal-close" onclick="document.getElementById('projectModal').style.display='none'"><i class="fa-solid fa-xmark"></i></span>
+        <h3 class="project-modal-title" id="pm-title">Project Name</h3>
+        
+        <div class="project-modal-details">
+            <div class="project-detail-item">
+                <span class="project-detail-label">Location</span>
+                <span class="project-detail-value" id="pm-location">-</span>
+            </div>
+            <div class="project-detail-item">
+                <span class="project-detail-label">Configuration</span>
+                <span class="project-detail-value" id="pm-config">-</span>
+            </div>
+            <div class="project-detail-item" id="pm-storey-container">
+                <span class="project-detail-label">Storey</span>
+                <span class="project-detail-value" id="pm-storey">-</span>
+            </div>
+            <div class="project-detail-item">
+                <span class="project-detail-label">Carpet Area</span>
+                <span class="project-detail-value" id="pm-carpet">-</span>
+            </div>
+            <div class="project-detail-item">
+                <span class="project-detail-label">Pricing</span>
+                <span class="project-detail-value" id="pm-pricing">-</span>
+            </div>
+            <div class="project-detail-item">
+                <span class="project-detail-label">Possession</span>
+                <span class="project-detail-value" id="pm-possession">-</span>
             </div>
         </div>
+        
+        <div id="pm-extra" class="project-modal-extra"></div>
+        
+        <div style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 1.5rem;">
+            <span style="font-family: var(--font-body); font-weight: 600; color: var(--text-secondary); font-size: 0.95rem;">Available for more questions?</span>
+            <a href="#register" onclick="document.getElementById('projectModal').style.display='none'" class="btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Click Here</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openProjectModal(name, loc, config, carpet, price, pos, storey, extra) {
+        document.getElementById('pm-title').innerText = name;
+        document.getElementById('pm-location').innerText = loc;
+        document.getElementById('pm-config').innerText = config;
+        document.getElementById('pm-carpet').innerText = carpet;
+        document.getElementById('pm-pricing').innerText = price;
+        document.getElementById('pm-possession').innerText = pos;
+        
+        if (storey) {
+            document.getElementById('pm-storey-container').style.display = 'flex';
+            document.getElementById('pm-storey').innerText = storey;
+        } else {
+            document.getElementById('pm-storey-container').style.display = 'none';
+        }
+        
+        const extraEl = document.getElementById('pm-extra');
+        if (extra) {
+            extraEl.style.display = 'block';
+            extraEl.innerText = extra;
+        } else {
+            extraEl.style.display = 'none';
+        }
+        
+        document.getElementById('projectModal').style.display = 'flex';
+    }
+    
+    // Move modal to body to fix stacking context issues
+    setTimeout(() => {
+        const modal = document.getElementById('projectModal');
+        if (modal) document.body.appendChild(modal);
+    }, 100);
+</script>
+        </div>
     </section>
+
 
 
 
 
 
     <!-- ======================================================
-       FEATURED DEVELOPERS
+       PREVIOUS EVENT SHOWCASE
        ====================================================== -->
-    <section id="developers" class="developers reveal">
+    <section id="previous-event" class="about reveal" style="background: var(--bg-secondary);">
         <div class="container">
-            <div class="devs-header">
-                <div>
-                    <span class="section-tag" style="margin-bottom: 2rem;">Featured at the show</span>
-                    <h2>India's Most <em>Trusted</em> Developers</h2>
-                </div>
-                <p class="devs-sub">Every developer at The Indian Property Show is personally vetted by Niksglobal Capital — for delivery record, RERA compliance, and investment-grade project quality.</p>
+            <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+                <span class="section-tag" style="justify-content: center;">Success Story</span>
+                <h2 class="section-title">What Happened in Our <em>Previous London Event</em></h2>
+
             </div>
 
-            <div class="developers-grid">
-                <!-- Developer Card 1 -->
-                <div class="developer-card">
-                    <div class="dev-card-top-line" style="background: #002868;"></div>
-                    <div class="dev-tag-box" style="color: #002868;">Master Developer</div>
-                    <h3>Rubrick Constructions</h3>
-                    <p>Master developers focusing on premium lifestyle amenities, strategic connectivity, and long-term capital growth across Hyderabad's key growth corridors.</p>
-                    
-                    <div class="dev-card-bottom">
-                        <div class="dev-card-location">
-                            <span class="loc-dot" style="background: #002868;"></span>
-                            <span>Hyderabad</span>
-                        </div>
-                        <div class="dev-card-action">
-                            <span class="giant-num">01</span>
-                            <a href="#register" class="action-btn-arrow"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
+            <div class="about-grid" style="align-items: center;">
+                <div class="about-img-wrap" style="order: 2;">
+                    <!-- Placeholder Image for Event -->
+                    <video src="WhatsApp Video 2026-07-12 at 9.28.27 PM.mp4" class="about-img" style="border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.1);" autoplay loop muted playsinline></video>
+                    <div class="about-img-badge">
+                        <span class="badge-num">100<sup>%</sup></span>
+                        <span class="badge-lbl">Success Rate</span>
                     </div>
                 </div>
 
-                <!-- Developer Card 2 -->
-                <div class="developer-card">
-                    <div class="dev-card-top-line" style="background: #B8892A;"></div>
-                    <div class="dev-tag-box" style="color: #B8892A;">Ultra Luxury</div>
-                    <h3>Srias Life Spaces</h3>
-                    <p>Shaping the skyline with ultra-luxury high-rise residences and premium community developments designed for elite urban living and absolute privacy.</p>
+                <div class="about-info-block" style="order: 1;">
+                    <h3 class="about-heading" style="font-size: 2.2rem; margin-bottom: 1.5rem;">A Benchmark in <em>Indian Real Estate Investment</em></h3>
+                    <p class="about-body">Our previous London Property Show set a benchmark for Indian property investment, showcasing excellence, innovation, and meaningful investor engagement.</p>
                     
-                    <div class="dev-card-bottom">
-                        <div class="dev-card-location">
-                            <span class="loc-dot" style="background: #B8892A;"></span>
-                            <span>Hyderabad</span>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                        <div style="border-left: 3px solid var(--accent-red); padding-left: 1rem;">
+                            <h4 style="font-size: 2.2rem; color: var(--accent-red); margin: 0;">£50M+</h4>
+                            <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em;">Capital Deployed</span>
                         </div>
-                        <div class="dev-card-action">
-                            <span class="giant-num">02</span>
-                            <a href="#register" class="action-btn-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                        <div style="border-left: 3px solid var(--accent-red); padding-left: 1rem;">
+                            <h4 style="font-size: 2.2rem; color: var(--accent-red); margin: 0;">200+</h4>
+                            <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em;">VIP Investors</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Developer Card 3 -->
-                <div class="developer-card">
-                    <div class="dev-card-top-line" style="background: var(--accent-red);"></div>
-                    <div class="dev-tag-box" style="color: var(--accent-red);">Premium Lands</div>
-                    <h3>Silversands Infra</h3>
-                    <p>Dedicated to providing quality properties, premium farmlands, and lifetime investment solutions completely immersed in pristine nature.</p>
-                    
-                    <div class="dev-card-bottom">
-                        <div class="dev-card-location">
-                            <span class="loc-dot" style="background: var(--accent-red);"></span>
-                            <span>Shamshabad / Pan India</span>
-                        </div>
-                        <div class="dev-card-action">
-                            <span class="giant-num">03</span>
-                            <a href="#register" class="action-btn-arrow"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- More Developers Dashed Box -->
-            <div class="more-developers-card">
-                <div class="plus-circle"><i class="fa-solid fa-plus"></i></div>
-                <h4>More Developers</h4>
-                <p>Additional vetted Tier-1 developers being confirmed for the Singapore edition. Register to be notified.</p>
-                <a href="#register" class="btn-tag-link">Applications Open</a>
             </div>
         </div>
     </section>
 
+    <!-- ======================================================
+       CHIEF GUESTS SECTION
+       ====================================================== -->
+    <section id="chief-guests" class="about reveal" style="background: var(--bg-primary);">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+                <span class="section-tag" style="justify-content: center;">Distinguished Attendees</span>
+                <h2 class="section-title">Honorable <em>Chief Guests</em>&nbsp; from our Previous<br>London Event</h2>
+            </div>
+            
+            <style>
+                .chief-guests-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                    gap: 3rem;
+                    margin-top: 4rem;
+                }
+                .guest-card {
+                    position: relative;
+                    background: #ffffff;
+                    border-radius: 30px;
+                    padding: 4rem 2.5rem 3rem;
+                    text-align: center;
+                    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+                    border: 1px solid rgba(194, 24, 50, 0.05);
+                    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+                    z-index: 1;
+                    overflow: hidden;
+                }
+                .guest-card::before {
+                    content: '';
+                    position: absolute;
+                    top: 0; left: 0; right: 0; height: 200px;
+                    background: linear-gradient(135deg, rgba(194, 24, 50, 0.05) 0%, rgba(194, 24, 50, 0) 100%);
+                    z-index: -1;
+                    transition: all 0.5s ease;
+                }
+                .guest-card:hover {
+                    transform: translateY(-15px);
+                    box-shadow: 0 30px 60px rgba(194, 24, 50, 0.12);
+                    border-color: rgba(194, 24, 50, 0.15);
+                }
+                .guest-card:hover::before {
+                    background: linear-gradient(135deg, rgba(194, 24, 50, 0.1) 0%, rgba(194, 24, 50, 0.02) 100%);
+                }
+                .guest-img-wrapper {
+                    position: relative;
+                    width: 250px;
+                    height: 250px;
+                    margin: 0 auto 2.5rem;
+                    padding: 10px;
+                    background: #ffffff;
+                    border-radius: 50%;
+                    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+                    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+                .guest-card:hover .guest-img-wrapper {
+                    transform: scale(1.05) translateY(-5px);
+                    box-shadow: 0 25px 45px rgba(194, 24, 50, 0.2);
+                }
+                .guest-img-wrapper img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid rgba(194, 24, 50, 0.1);
+                }
+                .guest-name {
+                    font-family: var(--font-heading);
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    color: var(--text-primary);
+                    margin-bottom: 0.5rem;
+                    letter-spacing: -0.02em;
+                }
+                .guest-title {
+                    color: var(--accent-red);
+                    font-size: 0.95rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.08em;
+                    margin-bottom: 1.5rem;
+                }
+                .guest-divider {
+                    width: 40px;
+                    height: 3px;
+                    background: var(--accent-red);
+                    margin: 0 auto 1.5rem;
+                    border-radius: 2px;
+                    opacity: 0.4;
+                    transition: all 0.4s ease;
+                }
+                .guest-card:hover .guest-divider {
+                    width: 60px;
+                    opacity: 1;
+                }
+                .guest-bio {
+                    color: var(--text-secondary);
+                    font-size: 1rem;
+                    line-height: 1.7;
+                    font-family: var(--font-body);
+                }
+            </style>
+            
+            <div class="chief-guests-grid">
+                
+                <!-- Guest 1 -->
+                <div class="guest-card">
+                    <div class="guest-img-wrapper">
+                        <img src="rami_ranger.jpeg" alt="Lord Rami Ranger">
+                    </div>
+                    <h3 class="guest-name">Raminder Ranger</h3>
+                    <p class="guest-title">British-Indian Businessman & Peer</p>
+                    <div class="guest-divider"></div>
+                    <p class="guest-bio">A prominent British-Indian entrepreneur, founder of Sun Mark Ltd, and a member of the House of Lords. He is widely recognized for his philanthropy and contributions to international trade.</p>
+                </div>
+
+                <!-- Guest 2 -->
+                <div class="guest-card">
+                    <div class="guest-img-wrapper">
+                        <img src="tony_matharu.jpg" alt="Tony Matharu">
+                    </div>
+                    <h3 class="guest-name">Tony Matharu</h3>
+                    <p class="guest-title">Executive Chairman, IIG</p>
+                    <div class="guest-divider"></div>
+                    <p class="guest-bio">Renowned hotelier and founder of Blue Orchid Hospitality. He is a key figure in London's business sectors, holding numerous leadership roles dedicated to economic and social recovery.</p>
+                </div>
+
+                <!-- Guest 3 -->
+                <div class="guest-card">
+                    <div class="guest-img-wrapper">
+                        <img src="tarun_gulati.jpeg" alt="Tarun Gulati">
+                    </div>
+                    <h3 class="guest-name">Tarun Gulati</h3>
+                    <p class="guest-title">Investment Banker & Entrepreneur</p>
+                    <div class="guest-divider"></div>
+                    <p class="guest-bio">London-based serial entrepreneur and investment banker with a strong focus on community cohesion and global business connections.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- ======================================================
        REGISTRATION SECTION
@@ -2332,28 +2803,30 @@
                             <!-- Full Name -->
                             <div class="form-group">
                                 <label class="form-label" for="full-name">Full Name</label>
-                                <input class="form-input" type="text" id="full-name" placeholder="John Doe" required>
+                                <input class="form-input" type="text" id="full-name" name="name" placeholder="John Doe" required>
                                 <span class="form-error">Full name is required</span>
                             </div>
 
                             <!-- Email -->
                             <div class="form-group">
                                 <label class="form-label" for="email">Corporate Email</label>
-                                <input class="form-input" type="email" id="email" placeholder="john@company.com" required>
+                                <input class="form-input" type="email" id="email" name="email" placeholder="john@company.com" required>
                                 <span class="form-error">A valid email address is required</span>
                             </div>
 
                             <!-- Phone -->
                             <div class="form-group form-full-row">
                                 <label class="form-label" for="phone">Phone Number (with Country Code)</label>
-                                <input class="form-input" type="tel" id="phone" placeholder="+65 8888 8888" required>
+                                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+65 8888 8888" required>
                                 <span class="form-error">Phone number is required</span>
                             </div>
 
                             <!-- Message -->
                             <div class="form-group form-full-row">
                                 <label class="form-label" for="message">Message (Optional)</label>
-                                <textarea class="form-input" id="message" placeholder="Specify any specific requirements, timeline, or preferred contact time..."></textarea>
+                                <textarea class="form-input" id="message" name="message" placeholder="Specify any specific requirements, timeline, or preferred contact time..."></textarea>
+                                <!-- Disabling reCAPTCHA for seamless AJAX submission -->
+                                <input type="hidden" name="_captcha" value="false">
                             </div>
                         </div>
 
@@ -2505,9 +2978,62 @@
             });
 
             if (isFormValid) {
-                // Show Success Panel
-                document.getElementById("form-success-panel").classList.add("active");
-                form.reset();
+                const submitBtn = form.querySelector('button[type="submit"]');
+                
+                // Update button state while submitting
+                const originalBtnContent = submitBtn.innerHTML;
+                submitBtn.innerHTML = "Sending...";
+                submitBtn.disabled = true;
+
+                const formData = new FormData(form);
+
+                fetch("https://formsubmit.co/ajax/niksglobalbusiness@gmail.com", {
+                    method: "POST",
+                    headers: { 
+                        'Accept': 'application/json'
+                    },
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Animate button click then show success panel
+                    if (typeof gsap !== 'undefined') {
+                        // Temporarily disable CSS transition to avoid conflict with GSAP
+                        gsap.set(submitBtn, { transition: 'none' });
+                        
+                        // Button shrinks and fades out elegantly
+                        gsap.to(submitBtn, {
+                            scale: 0.8,
+                            opacity: 0,
+                            duration: 0.3,
+                            ease: "power2.in",
+                            onComplete: () => {
+                                // Show Success Panel
+                                document.getElementById("form-success-panel").classList.add("active");
+                                form.reset();
+                                
+                                // Reset button in the background for future submissions
+                                setTimeout(() => {
+                                    gsap.set(submitBtn, { clearProps: 'all' });
+                                    submitBtn.innerHTML = originalBtnContent;
+                                    submitBtn.disabled = false;
+                                }, 500);
+                            }
+                        });
+                    } else {
+                        // Fallback if GSAP is not loaded
+                        document.getElementById("form-success-panel").classList.add("active");
+                        form.reset();
+                        submitBtn.innerHTML = originalBtnContent;
+                        submitBtn.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    console.error("Error submitting form", error);
+                    alert("There was an error submitting your request. Please try again later.");
+                    submitBtn.innerHTML = originalBtnContent;
+                    submitBtn.disabled = false;
+                });
             }
         }
 
@@ -2574,6 +3100,99 @@
                 stagger: 0.15,
                 ease: "power3.out"
             });
+
+            // Previous Event Showcase animation
+            gsap.from('#previous-event .section-header, #previous-event .about-info-block, #previous-event .about-img-wrap', {
+                scrollTrigger: {
+                    trigger: '#previous-event',
+                    start: "top 80%"
+                },
+                y: 30,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.2,
+                ease: "power3.out"
+            });
+
+            // Chief Guests animation (unique pop-up)
+            // Prevent CSS transition from interfering with GSAP's initial setup and animation
+            gsap.set('#chief-guests .guest-card', { transition: 'none' });
+
+            gsap.from('#chief-guests .section-header', {
+                scrollTrigger: {
+                    trigger: '#chief-guests',
+                    start: "top 85%"
+                },
+                y: 30,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power3.out"
+            });
+
+            gsap.from('#chief-guests .guest-card', {
+                scrollTrigger: {
+                    trigger: '#chief-guests .chief-guests-grid',
+                    start: "top 80%"
+                },
+                y: 60,
+                scale: 0.85,
+                opacity: 0,
+                rotationX: 15,
+                duration: 0.9,
+                stagger: 0.2,
+                ease: "back.out(1.7)",
+                onComplete: () => {
+                    // Restore CSS transitions for hover effects
+                    gsap.set('#chief-guests .guest-card', { clearProps: 'transition' });
+                }
+            });
+
+            // Registration Form Unique Animation
+            // Prevent CSS transition from interfering with GSAP's initial setup
+            gsap.set('#register .register-card, #register button[type="submit"]', { transition: 'none' });
+
+            const registerTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '#register',
+                    start: "top 75%"
+                },
+                onComplete: () => {
+                    gsap.set('#register .register-card, #register button[type="submit"]', { clearProps: 'transition' });
+                }
+            });
+
+            // Card background pops in
+            registerTl.from('#register .register-card', {
+                y: 50,
+                scale: 0.95,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power3.out"
+            })
+            // Text fades down
+            .from('#register .register-card h3, #register .register-card > p', {
+                y: -20,
+                opacity: 0,
+                duration: 0.6,
+                stagger: 0.15,
+                ease: "power2.out"
+            }, "-=0.4")
+            // Form inputs slide in dynamically from alternating sides
+            .from('#register .form-group', {
+                x: (index) => index % 2 === 0 ? -40 : 40,
+                opacity: 0,
+                duration: 0.7,
+                stagger: 0.1,
+                ease: "back.out(1.2)"
+            }, "-=0.3")
+            // Submit button springs up
+            .from('#register button[type="submit"]', {
+                scale: 0.8,
+                opacity: 0,
+                y: 20,
+                duration: 0.8,
+                ease: "elastic.out(1, 0.6)"
+            }, "-=0.4");
 
             // Airplane Journey Animation
             const airplaneTl = gsap.timeline({
